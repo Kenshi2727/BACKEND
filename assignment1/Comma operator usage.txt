@@ -1,0 +1,40 @@
+Q4. Describe the usage of the comma operator in JavaScript and provide an example.
+
+Answer:
+=======
+
+Comma operator is used when we have to evaluate multiple expressions in javascript.
+Remember that the last expression is excluded from evaluation.
+We can use the comma operator when we want to include multiple expressions in a location that requires a single expression.
+We usually use comma operator(,) in for loop for giving multiple initializations and multiple updaters.
+It has the lowest precedence of all operators so in a bigger expression it is suggested to paranthesize it.
+It is also used for multiple assignments.
+
+Example-
+=======
+let x = 8;
+
+x = (x++, x--);
+
+console.log(x);
+// Expected output: 9
+
+x = (2, 3,8,9,1000000000);
+
+console.log(x);
+// Expected output: 1000000000
+
+
+
+Syntax-
+======
+expr1, expr2, expr3/* , … */
+
+
+Parameters-
+==========
+expr1, expr2, expr3, …
+One or more expressions, the last of which is returned as the value of the compound expression.
+
+
+
